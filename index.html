@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Inteireza Divina · Nível I — Identidade Divina e Soberania Interior. Curso de um dia com João Carlos Paliteiro, BEYOND. Sábado, 24 de outubro, 14h30 Lisboa, online via Zoom.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://inteireza.joaopaliteiro.com/"><meta property="og:locale" content="pt_PT">
+<meta property="og:title" content="Inteireza Divina · Identidade Divina e Soberania Interior">
+<meta property="og:description" content="Não te falta nada nem ninguém. Falta-te voltares a ti. Sábado, 24 de outubro · 14h30 Lisboa · 10h30 Brasília · Zoom.">
+<meta property="og:image" content="https://inteireza.joaopaliteiro.com/capa.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://inteireza.joaopaliteiro.com/capa.jpg">
+<meta name="theme-color" content="#2E2454">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Inteireza Divina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel:wght@500;600&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Layout: o formato de curso da BEYOND (como o DPH Nível II): fundo creme, cartões brancos, secções com cabeçalho centrado. A cor própria do curso vem das três luzes do símbolo (turquesa, violeta, dourado) que se juntam numa só: a Inteireza. Single look por escolha. */
+:root{
+  --cream:#FBF6EC;
+  --cream-deep:#F3EAD3;
+  --card:#FFFFFF;
+  --ink:#2A2018;
+  --ink-soft:#5f5446;
+  --indigo:#2E2454;
+  --indigo-soft:#4A3B7A;
+  --gold:#C9A063;
+  --gold-deep:#8a6a2f;
+  --teal:#3fc3c9;
+  --violet:#8f5bd6;
+  --sun:#f2c14e;
+  --line:#E6D9BE;
+  --shadow:0 16px 40px rgba(120,90,40,.12);
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --caps:"Cinzel",Georgia,serif;
+  --sans:"Jost","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.65;
+  background:
+    radial-gradient(ellipse 900px 520px at 12% -8%, rgba(63,195,201,.10), transparent 60%),
+    radial-gradient(ellipse 800px 600px at 100% 12%, rgba(143,91,214,.08), transparent 55%),
+    radial-gradient(ellipse 1000px 700px at 50% 115%, rgba(242,193,78,.12), transparent 60%),
+    linear-gradient(180deg,var(--cream),#FEFCF6 30%,var(--cream) 70%,var(--cream-deep));}
+.wrap{max-width:900px;margin:0 auto;padding-inline:22px;padding-block:28px 40px}
+a{color:var(--indigo)}
+:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+.eyebrow{font-family:var(--caps);font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);display:flex;align-items:center;justify-content:center;gap:10px;text-align:center}
+.eyebrow::before,.eyebrow::after{content:"";width:28px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.eyebrow::after{background:linear-gradient(90deg,var(--gold),transparent)}
+
+/* HERO: texto à esquerda, as três luzes à direita (a mesma composição dos posts) */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:10px;align-items:center;margin-top:8px}
+.hero>div{min-width:0}
+.logo{width:200px;height:auto;display:block;margin:0 0 30px}
+.badge{display:inline-block;font-family:var(--caps);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--indigo);border:1px solid #d6cbe9;border-radius:999px;padding:8px 18px;background:rgba(255,255,255,.75)}
+.eusou{font-family:var(--caps);font-weight:600;letter-spacing:.16em;font-size:clamp(1.9rem,5.2vw,3rem);line-height:1;margin:28px 0 4px;background:linear-gradient(100deg,var(--gold-deep),#c9a063 50%,var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent}
+h1{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(3rem,8.5vw,5rem);line-height:1.02;margin:6px 0 0;
+  background:linear-gradient(100deg,var(--indigo) 10%,#3a8f9a 45%,var(--violet) 70%,var(--gold-deep) 95%);-webkit-background-clip:text;background-clip:text;color:transparent;text-wrap:balance}
+.subtitle{font-family:var(--serif);font-weight:600;font-size:clamp(1.45rem,3.8vw,1.85rem);line-height:1.25;color:var(--indigo);margin:12px 0 0;text-wrap:balance}
+.lema{font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,3.4vw,1.7rem);line-height:1.35;color:var(--ink-soft);margin:16px 0 0;max-width:30ch}
+.when{display:inline-grid;gap:2px;margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 22px;box-shadow:var(--shadow)}
+.when b{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--indigo)}
+.when small{font-size:16px;color:var(--ink-soft)}
+.hero-btn{margin-top:24px}
+.orbs{position:relative;width:100%;max-width:400px;aspect-ratio:1;justify-self:center}
+.o{position:absolute;width:64%;height:64%;border-radius:50%;mix-blend-mode:multiply}
+.o1{left:6%;top:2%;background:radial-gradient(circle,rgba(63,195,201,.85),rgba(63,195,201,.35) 55%,rgba(63,195,201,0) 72%)}
+.o2{left:34%;top:20%;background:radial-gradient(circle,rgba(143,91,214,.8),rgba(143,91,214,.32) 55%,rgba(143,91,214,0) 72%)}
+.o3{left:12%;top:36%;background:radial-gradient(circle,rgba(242,193,78,.9),rgba(242,193,78,.35) 55%,rgba(242,193,78,0) 72%)}
+.core{position:absolute;left:28%;top:28%;width:44%;height:44%;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.95),rgba(255,255,255,0) 70%)}
+@media (prefers-reduced-motion:no-preference){.orbs .o{animation:breathe 9s ease-in-out infinite}.orbs .o2{animation-delay:-3s}.orbs .o3{animation-delay:-6s}}
+@keyframes breathe{50%{transform:scale(1.04)}}
+@media (max-width:700px){.hero{grid-template-columns:1fr}.orbs{max-width:230px;margin-top:6px;order:2}}
+
+section{margin-top:64px}
+.section-head{text-align:center;margin-bottom:26px}
+.section-head .eyebrow{margin-bottom:10px}
+h2{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.7rem,4.4vw,2.3rem);line-height:1.2;text-align:center;margin:0;color:var(--indigo);text-wrap:balance}
+.note{text-align:center;font-size:16px;color:var(--gold-deep);margin:8px auto 0;max-width:60ch}
+.lead{max-width:640px;margin:0 auto 14px;text-align:center;color:var(--ink-soft)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px clamp(20px,4vw,40px);box-shadow:var(--shadow)}
+.card p{margin:0 0 14px;color:var(--ink-soft)}
+.card p:last-child{margin-bottom:0}
+.card strong{color:var(--gold-deep);font-weight:600}
+.verse{font-family:var(--serif);font-style:italic;font-size:1.5rem;line-height:1.35;color:var(--indigo)!important}
+
+/* Ensinamento */
+.teaching{max-width:640px;margin:22px auto 0;border-left:3px solid;border-image:linear-gradient(180deg,var(--teal),var(--violet),var(--sun)) 1;padding:6px 0 6px 24px}
+.teaching p{font-family:var(--serif);font-size:1.45rem;line-height:1.4;margin:0 0 10px;color:var(--indigo)}
+.teaching cite{display:block;font-style:normal;font-size:15px;color:var(--ink-soft)}
+
+/* Programa */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid2>*{min-width:0}
+@media (max-width:640px){.grid2{grid-template-columns:1fr}}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow);border-top:4px solid var(--c,var(--gold))}
+.pcard h3{font-family:var(--caps);font-size:15.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--indigo);margin:0 0 12px}
+.pcard ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:16.5px}
+.pcard li{margin-bottom:7px}
+.c1{--c:var(--teal)}.c2{--c:var(--violet)}.c3{--c:var(--sun)}.c4{--c:var(--gold)}
+
+/* Valências */
+.val{display:grid;grid-template-columns:1fr 1fr;gap:22px 30px;max-width:760px;margin:0 auto}
+.val>div{min-width:0}
+.val h3{font-family:var(--serif);font-size:1.35rem;font-weight:600;color:var(--indigo);margin:0 0 2px}
+.val p{margin:0;font-size:16.5px;color:var(--ink-soft)}
+@media (max-width:640px){.val{grid-template-columns:1fr}}
+
+/* Providência em destaque */
+.prov{background:linear-gradient(140deg,#fff8e6,#fffdf7 60%,#f6efff);border:1px solid var(--gold-soft,#E4C98A);border-radius:20px;padding:32px clamp(20px,4vw,40px);box-shadow:var(--shadow)}
+.prov p{color:var(--ink-soft);margin:0 0 14px}
+.prov .verse{text-align:center;margin:18px 0 0}
+
+/* Para quem já cura */
+.healers{background:var(--indigo);color:#f2eefb;border-radius:20px;padding:32px clamp(20px,4vw,40px)}
+.healers .eyebrow{color:var(--sun);justify-content:flex-start}
+.healers .eyebrow::before{display:none}
+.healers h2{color:#fff;text-align:left;margin:10px 0 14px}
+.healers ul{padding:0;list-style:none;display:grid;gap:8px;margin:14px 0}
+.healers li{padding-left:24px;position:relative}
+.healers li::before{content:"✦";position:absolute;left:0;color:var(--sun);font-size:13px;top:4px}
+
+/* Datas */
+table.schedule{width:100%;border-collapse:collapse}
+table.schedule th{font-family:var(--caps);font-size:13.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);text-align:left;padding:0 10px 10px;border-bottom:1px solid var(--line);font-weight:500}
+table.schedule td{padding:13px 10px;border-bottom:1px solid var(--line);font-size:16.5px;vertical-align:top}
+table.schedule td.h{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--gold-deep)}
+table.schedule tr.pause td{color:var(--ink-soft);font-style:italic}
+.tbl{overflow-x:auto}
+.total-row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.total-row .k{font-family:var(--caps);font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.total-row .v{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--indigo)}
+.format-line{text-align:center;margin:16px 0 0;font-size:16px;color:var(--ink-soft)}
+
+/* Preços (cada cartão desaparece sozinho no seu prazo) */
+.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.price-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 16px;text-align:center;box-shadow:var(--shadow)}
+.price-card.featured{border-color:var(--gold);background:#FFFDF7;transform:translateY(-4px)}
+.price-card.expired{display:none}
+.price-card.later{background:rgba(255,255,255,.6);box-shadow:none}
+.price-card.later .amount{color:var(--indigo-soft)}
+.price-card.later .buy-btn{display:none}
+.price-card .next{display:none;font-family:var(--caps);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);margin-top:12px}
+.price-card.later .next{display:block}
+.price-card .tag{font-family:var(--caps);font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--indigo-soft);margin-bottom:8px}
+.price-card .amount{font-family:var(--serif);font-style:italic;font-size:2.4rem;color:var(--indigo);line-height:1.1}
+.price-card .save{font-size:16px;color:var(--gold-deep);margin-top:4px;font-weight:600}
+.price-card .until{font-size:15.5px;color:var(--ink-soft);margin-top:8px}
+.buy-btn,.btn{display:inline-block;margin-top:16px;font-family:var(--sans);font-size:16px;font-weight:600;letter-spacing:.02em;color:#FFFDF7;background:linear-gradient(100deg,var(--indigo-soft),var(--indigo));padding:13px 26px;border-radius:999px;text-decoration:none;box-shadow:0 8px 22px rgba(46,36,84,.25)}
+.btn{font-size:17px;padding:16px 32px}
+.btn.ghost{background:#fff;color:var(--indigo);border:1.5px solid var(--indigo);box-shadow:none}
+.fine-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow)}
+.fine-card h4{font-family:var(--caps);font-size:14.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 8px}
+.fine-card p{margin:0 0 10px;font-size:16px;color:var(--ink-soft)}
+.fine-card a.link{font-weight:500}
+
+/* Bónus e frutos */
+.bonus-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.bonus-list li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-size:17px;color:var(--ink-soft);box-shadow:var(--shadow)}
+.bonus-list .num{font-family:var(--serif);font-style:italic;color:var(--gold-deep);font-size:1.25rem;line-height:1.2;flex-shrink:0}
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;max-width:700px;margin:0 auto;padding:0}
+@media (max-width:640px){.benefits{grid-template-columns:1fr}}
+.benefits li{list-style:none;color:var(--ink-soft);font-size:16.5px;padding-left:22px;position:relative}
+.benefits li::before{content:"✦";position:absolute;left:0;color:var(--gold);font-size:12px;top:5px}
+.mentors b{color:var(--indigo);font-weight:500}
+.mentors{text-align:center;color:var(--ink-soft);max-width:640px;margin:0 auto;line-height:1.9}
+.mentors .todo{display:inline-block;border:1.5px dashed var(--gold);border-radius:10px;padding:6px 14px;color:var(--gold-deep);font-size:16px}
+
+/* FAQ */
+details{border-top:1px solid var(--line);padding-block:16px}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-family:var(--serif);font-size:1.4rem;color:var(--indigo);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--gold-deep)}
+details[open] summary::after{content:"–"}
+details p{margin:10px 0 0;color:var(--ink-soft)}
+
+.cta{text-align:center;background:var(--cream-deep);border:1px solid #E4C98A;border-radius:22px;padding:44px clamp(20px,5vw,52px);box-shadow:var(--shadow)}
+.cta .lead{margin-bottom:6px}
+.presente{text-align:center}
+.presente form{max-width:440px;margin:18px auto 0;display:grid;gap:12px}
+.presente input{font:inherit;font-size:16px;padding:14px 18px;border:1.5px solid var(--line);border-radius:999px;background:#fff;color:var(--ink)}
+.presente .fine{font-size:14.5px;color:var(--ink-soft);margin:4px 0 0}
+footer{margin-top:60px;text-align:center;padding-top:30px;border-top:1px solid var(--line)}
+footer .sig{font-family:var(--serif);font-style:italic;font-size:1.45rem;color:var(--gold-deep)}
+footer .meta{margin:10px auto 0;font-size:15px;color:var(--ink-soft);max-width:560px}
+footer img{width:150px;height:auto;margin:22px auto 0;display:block}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div>
+      <img class="logo" src="logo-horizontal.png" alt="BEYOND — Academia de Evolução Divina" width="560" height="145">
+      <span class="badge">Curso de um dia · Nível I</span>
+      <p class="eusou">EU SOU</p>
+      <h1>Inteireza Divina</h1>
+      <p class="subtitle">Identidade Divina e Soberania Interior</p>
+      <p class="lema">Não te falta nada nem ninguém. Falta-te voltares a ti.</p>
+      <div class="when">
+        <b>Sábado, 24 de outubro</b>
+        <small>14h30–20h30 Lisboa · 10h30–16h30 Brasília · Online pelo Zoom</small>
+      </div>
+      <div class="hero-btn"><a class="btn" href="#precos">Garantir o meu lugar</a></div>
+    </div>
+    <div class="orbs" aria-hidden="true"><div class="o o1"></div><div class="o o2"></div><div class="o o3"></div><div class="core"></div></div>
+  </header>
+
+  <section id="convite">
+    <div class="card">
+      <p><strong>Quantas vezes procuraste no outro o que te faltava a ti?</strong> Na mãe que não te viu. No pai que não esteve. No amor que esperavas que te completasse. No dinheiro que nunca chega. Em quem partiu e levou consigo uma parte de ti.</p>
+      <p>Por baixo de todas estas histórias está a mesma ferida: a sensação de não estares inteir@. E é a partir dessa falta que tantas vezes amamos, cuidamos, pedimos e até rezamos.</p>
+      <p>A Inteireza Divina é a meta de todos os seres. Não é uma conquista para alguns. É o regresso ao que já és em Deus: um Ser inteiro, soberano, com uma Identidade Divina que nada nem ninguém te pode dar ou tirar.</p>
+      <p class="verse">Eu Sou. E isso chega.</p>
+    </div>
+  </section>
+
+  <section id="o-que-e">
+    <div class="section-head">
+      <div class="eyebrow">Um ensinamento novo</div>
+      <h2>O que é a Inteireza</h2>
+    </div>
+    <p class="lead">No Bálsamo Divino de 10 de outubro recebi, pela primeira vez desta forma, um ensinamento sobre a inteireza nas relações. Este curso nasce dele e alarga-o à tua Identidade e à tua Soberania.</p>
+    <div class="teaching">
+      <p>Só alguém inteiro reativa a inteireza noutra pessoa.</p>
+      <p>Duas metades não fazem um inteiro.</p>
+      <p>Eu sou o caminho, eu sou a vida, eu sou a minha decisão.</p>
+      <p>Toda a cura passa pela relação comigo, que é a relação com Deus.</p>
+      <cite>Bálsamo Divino · 10 de outubro de 2026</cite>
+    </div>
+  </section>
+
+  <section id="programa">
+    <div class="section-head">
+      <div class="eyebrow">Estrutura</div>
+      <h2>Programa Resumo</h2>
+      <p class="note">O curso é canalizado: o conteúdo exato revela-se no momento.</p>
+    </div>
+    <div class="grid2">
+      <div class="pcard c1">
+        <h3>Identidade Divina · Eu Sou</h3>
+        <ul>
+          <li>Quem és para além das histórias que te contaram</li>
+          <li>A identidade forjada e a Identidade Divina</li>
+          <li>O teu nome e o que ele guarda</li>
+          <li>A Divina Presença EU SOU como centro</li>
+        </ul>
+      </div>
+      <div class="pcard c2">
+        <h3>Soberania Espiritual</h3>
+        <ul>
+          <li>Ser o teu próprio fiel da balança</li>
+          <li>O que é teu e o que não é</li>
+          <li>Decidir a partir do Eixo: a decisão vale mais do que o desejo</li>
+          <li>Laços e contratos que já não te servem</li>
+        </ul>
+      </div>
+      <div class="pcard c3">
+        <h3>Inteireza com Deus e com a Vida</h3>
+        <ul>
+          <li>Merecimento, camada a camada</li>
+          <li>A culpa espiritual e a fé como coragem</li>
+          <li>Escassez, falta e Providência</li>
+          <li>Integridade: o que penso, digo e faço é uma só coisa</li>
+        </ul>
+      </div>
+      <div class="pcard c4">
+        <h3>Práticas e Iniciação</h3>
+        <ul>
+          <li>O Exercício do Nome</li>
+          <li>A Recolha dos Fragmentos: chamar de volta as partes de ti que ficaram pelo caminho, e devolver ao outro as que são dele</li>
+          <li>Decretos da Inteireza</li>
+          <li>Iniciação à Soberania Interior</li>
+          <li>Iniciação à Identidade Divina</li>
+          <li>Iniciação à Presença Cósmica</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="providencia">
+    <div class="prov">
+      <div class="eyebrow" style="margin-bottom:12px">Inteireza e Providência</div>
+      <h2 style="margin-bottom:18px">A escassez nasce da crença e sensação de falta.</h2>
+      <p>"Não me sinto suficiente" é o mesmo que "não estou pleno". E quem não se sente pleno vive com medo de que não chegue: o dinheiro, o tempo, o amor, a saúde.</p>
+      <p>Quando regressas à União com Deus, regressas à Plenitude. E a Providência encontra porta aberta para chegar até ti, por caminhos que não imaginas.</p>
+      <p class="verse">A Providência responde à Unidade.</p>
+    </div>
+  </section>
+
+  <section id="valencias">
+    <div class="section-head">
+      <div class="eyebrow">O que este dia trabalha</div>
+      <h2>O que se cura, se resgata e se ensina</h2>
+    </div>
+    <div class="val">
+      <div><h3>Comigo</h3><p>Merecimento, autoestima, autorrejeição. O que sinto quando ouço o meu nome.</p></div>
+      <div><h3>Com Deus</h3><p>A culpa de "não praticar o suficiente". Reaprender quem Deus é para mim.</p></div>
+      <div><h3>Na Soberania</h3><p>Saber o que é meu e o que não é. Deixar de entregar o meu poder.</p></div>
+      <div><h3>Nas relações</h3><p>Apego, laços e contratos. Duas metades não fazem um inteiro.</p></div>
+      <div><h3>Na palavra</h3><p>Integridade é inteireza: pensamento, palavra e ação, unidos.</p></div>
+      <div><h3>Na Providência</h3><p>Da escassez à Plenitude. A falta fecha portas; a União abre-as.</p></div>
+      <div><h3>No corpo</h3><p>Um Ser inteiro dá ao corpo uma só mensagem. As células ouvem.</p></div>
+      <div><h3>Na linhagem</h3><p>O primeiro passo para a Ordem Divina na família. Aprofundado no Nível II.</p></div>
+    </div>
+  </section>
+
+  <section id="quem-cura">
+    <div class="healers">
+      <div class="eyebrow">Para quem já cura</div>
+      <h2>Se já atendes, este dia é para ti também.</h2>
+      <p>Para alunos de Divine Presence Healing®, de Canalização e Divine Light Mentoring® e para terapeutas. Quem cuida dos outros é quem mais se gasta e quem mais carrega o que não é seu.</p>
+      <ul>
+        <li>curar a partir da Presença, e não da falta;</li>
+        <li>não te fundires com quem recebe;</li>
+        <li>devolver as cargas que não são tuas;</li>
+        <li>servir sem te esvaziares.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="mentores">
+    <div class="section-head">
+      <div class="eyebrow">Chancela Espiritual</div>
+      <h2>Mentores de Luz Divina</h2>
+    </div>
+    <p class="mentors">
+      <b>Mãe Maria</b>, <b>Mestre Sananda</b>, <b>Mestre Saint Germain</b>,
+      <b>Sanat Kumara</b>, <b>Conselho Cármico</b>,
+      Mestres, Anjos, Arcanjos e Elohins dos <b>12 Raios Divinos</b>,
+      <b>Presença Cósmica</b>, <b>Maha Chohan</b>,
+      <b>Conselhos do Paraíso</b>.
+    </p>
+  </section>
+
+  <section id="datas">
+    <div class="section-head">
+      <div class="eyebrow">Calendário</div>
+      <h2>O dia, em três movimentos</h2>
+    </div>
+    <div class="card">
+      <div class="tbl"><table class="schedule">
+        <thead><tr><th>Horário</th><th>Movimento</th></tr></thead>
+        <tbody>
+          <tr><td class="h">14h30 – 16h10</td><td>I · Identidade Divina: Eu Sou</td></tr>
+          <tr class="pause"><td class="h">16h10 – 16h35</td><td>Pausa</td></tr>
+          <tr><td class="h">16h35 – 18h25</td><td>II · Soberania Espiritual e Inteireza nas relações</td></tr>
+          <tr class="pause"><td class="h">18h25 – 18h50</td><td>Pausa</td></tr>
+          <tr><td class="h">18h50 – 20h30</td><td>III · Inteireza com Deus e com a Vida · Iniciações</td></tr>
+        </tbody>
+      </table></div>
+      <div class="total-row"><span class="k">Sábado, 24 de outubro</span><span class="v">6 Horas</span></div>
+      <p class="format-line">Horário de Lisboa (10h30 em Brasília) · Totalmente online via Zoom · Participa de qualquer parte do mundo</p>
+    </div>
+  </section>
+
+  <section id="precos">
+    <div class="section-head">
+      <div class="eyebrow">Investimento</div>
+      <h2>Preços</h2>
+      <p class="note">Quanto mais cedo, menor o valor. Cada valor desaparece sozinho quando termina o seu prazo.</p>
+    </div>
+    <div class="pricing" id="pricing-grid">
+      <div class="price-card" data-deadline="2026-10-16T23:59:59+01:00" data-price="122€" data-name="Ação Rápida">
+        <div class="tag">Ação Rápida</div><div class="amount">122€</div><div class="save">-30%</div>
+        <div class="until">até sexta-feira · 16 de outubro</div>
+        <a class="buy-btn" href="#">Garantir o meu lugar</a>
+        <div class="next">Próximo valor</div>
+      </div>
+      <div class="price-card" data-deadline="2026-10-20T23:59:59+01:00" data-price="144€" data-name="Early Bird" data-from="de 17 a 20 de outubro">
+        <div class="tag">Early Bird</div><div class="amount">144€</div><div class="save">-20%</div>
+        <div class="until">até terça-feira · 20 de outubro</div>
+        <a class="buy-btn" href="#">Garantir o meu lugar</a>
+        <div class="next">Próximo valor</div>
+      </div>
+      <div class="price-card" data-deadline="2026-10-24T13:00:00+01:00" data-price="177€" data-name="Preço normal" data-from="de 21 a 24 de outubro">
+        <div class="tag">Preço Normal</div><div class="amount">177€</div><div class="save">&nbsp;</div>
+        <div class="until">até ao dia · sábado, 24, às 13h</div>
+        <a class="buy-btn" href="#">Garantir o meu lugar</a>
+        <div class="next">Próximo valor</div>
+      </div>
+    </div>
+    <p class="closed-msg note" hidden>As inscrições para este curso estão encerradas.</p>
+    <div class="grid2" style="margin-top:20px">
+      <div class="fine-card">
+        <h4>Vem com quem amas</h4>
+        <p>Cada pessoa que trouxeres paga metade do valor em vigor nesse momento. Escreve-me pelo WhatsApp com os nomes e envio-te o código.</p>
+        <a class="link" data-duo href="#">Quero trazer quem amo</a>
+      </div>
+      <div class="fine-card">
+        <h4>Transferência bancária</h4>
+        <p>O botão acima aceita cartão (de qualquer país) e MB WAY. Se preferires transferência bancária, pede-me os dados e envio-tos por email.</p>
+        <a class="link" data-other href="#">Pedir os dados de transferência</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="bonus">
+    <div class="section-head">
+      <div class="eyebrow">Oferta</div>
+      <h2>Bónus Incluídos</h2>
+    </div>
+    <ul class="bonus-list">
+      <li><span class="num">01</span> A gravação completa do curso</li>
+      <li><span class="num">02</span> Manual da Inteireza (PDF), com os ensinamentos, as práticas e os decretos do dia</li>
+      <li><span class="num">03</span> Áudio "Recolher-te", a prática da Recolha dos Fragmentos para repetires em casa</li>
+      <li><span class="num">04</span> Desconto de 50% numa Sessão individual de Divine Presence Healing®, válido durante 6 meses</li>
+      <li><span class="num">05</span> Grupo de Chat de acompanhamento e integração na Comunidade de Alunos dos Mestres da Luz Divina</li>
+    </ul>
+  </section>
+
+  <section id="beneficios">
+    <div class="section-head">
+      <div class="eyebrow">Frutos</div>
+      <h2>O que Vais Receber</h2>
+    </div>
+    <ul class="benefits">
+      <li>Reconexão com a tua Identidade Divina</li>
+      <li>Mais Soberania nas tuas decisões e relações</li>
+      <li>Libertação de laços e contratos que já não te servem</li>
+      <li>Regresso das partes de ti que ficaram pelo caminho</li>
+      <li>Mais merecimento e menos culpa</li>
+      <li>Abertura à Providência e à Plenitude</li>
+      <li>Coerência entre o que pensas, dizes e fazes</li>
+      <li>Três Iniciações: Soberania Interior, Identidade Divina e Presença Cósmica</li>
+    </ul>
+  </section>
+
+  <section id="quem">
+    <div class="section-head">
+      <div class="eyebrow">Quem conduz</div>
+      <h2>João Carlos Paliteiro</h2>
+    </div>
+    <div class="card">
+      <p>Ex-engenheiro e investigador científico, deixei a carreira académica para servir a Luz. Há mais de 22 anos que acompanho pessoas no seu Caminho, com mais de 16.000 atendimentos individuais e mais de mil cursos e aulas em vários países.</p>
+      <p>Sou criador do sistema Divine Presence Healing® e Divine Light Mentoring® e fundador da BEYOND — Academia de Evolução Divina. Trabalho como Canal dos Mestres Ascensionados e da Hierarquia da Luz Divina, com uma linguagem simples e estruturada.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="section-head"><h2>Perguntas frequentes</h2></div>
+    <details><summary>Preciso de ter feito outros cursos?</summary><p>Não. Este dia é aberto a todos. Quem já fez outros cursos irá encontrar um aprofundamento do que já sabe e pratica, sobretudo no terceiro movimento.</p></details>
+    <details><summary>Tenho de partilhar a minha história?</summary><p>Não. Podes partilhar se te fizer sentido, mas o trabalho acontece em ti, com ou sem palavras.</p></details>
+    <details><summary>E se não puder estar ao vivo?</summary><p>Recebes a gravação completa. A Cura e as Iniciações são transmitidas a todos os inscritos. Mas se puderes, vem ao vivo!</p></details>
+    <details><summary>Há pausas?</summary><p>Sim, duas pausas de 25 minutos, entre cada movimento.</p></details>
+    <details><summary>E se trouxer alguém?</summary><p>Cada pessoa que trouxeres paga metade do valor em vigor nesse momento. Escreve-me pelo WhatsApp com os nomes e envio-te o código.</p></details>
+    <details><summary>Como pago?</summary><p>Com cartão (de qualquer país) ou MB WAY, no botão do valor em vigor. Para transferência bancária, toca em "Pedir os dados de transferência" e envio-tos por email.</p></details>
+    <details><summary>Isto substitui tratamento médico ou psicológico?</summary><p>Não. É um trabalho espiritual, complementar. Não interrompas nenhum tratamento.</p></details>
+  </section>
+
+  <section id="cta">
+    <div class="cta">
+      <div class="eyebrow">O Próximo Passo</div>
+      <h2 style="margin:10px 0 22px">Vem como estás:<br>é assim que começas a ficar inteir@.</h2>
+      <p class="lead">Escolhe o teu valor acima, ou fala comigo se tiveres alguma dúvida.</p>
+      <a class="btn" href="#precos">Garantir o meu lugar</a>
+      <p class="lead" style="margin-top:14px"><a data-write href="#">ou escreve ao João pelo WhatsApp</a></p>
+    </div>
+  </section>
+
+  <section id="presente" class="presente">
+    <div class="eyebrow">Ainda não é o teu momento?</div>
+    <h2 style="margin-top:10px">Recebe um presente para o teu Caminho</h2>
+    <p class="lead" style="margin-top:12px">Ofereço-te a <b>Ativação do Equilíbrio Interior</b>, a meditação guiada que fizemos juntos na Live do Equinócio de Setembro.</p>
+    <form data-presente novalidate>
+      <input id="p-nome" type="text" name="fields[name]" placeholder="O teu nome" autocomplete="given-name" aria-label="O teu nome">
+      <input id="p-email" type="email" name="fields[email]" placeholder="O teu email" autocomplete="email" required aria-label="O teu email">
+      <button class="btn ghost" type="submit" style="margin-top:4px;cursor:pointer;font:inherit;font-weight:600">Quero receber o presente</button>
+      <p class="fine">Ao receberes o presente, entras na minha lista de email. Podes sair quando quiseres.</p>
+    </form>
+    <div data-presente-ok hidden>
+      <p class="lead" style="margin-top:16px">Obrigado por te abrires a este momento. 🙏</p>
+      <a class="btn" href="https://drive.google.com/file/d/14FAq4GQIuf0f06UijD4fNNnASVspICO8/view" target="_blank" rel="noopener">Ouvir a Ativação</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="sig">Com Amor, João Carlos</div>
+    <p class="meta">João Carlos Paliteiro – Canal da Luz Divina · Instagram @joao_carlos_paliteiro</p>
+    <p class="meta">Trabalho espiritual de natureza complementar. Não substitui diagnóstico nem tratamento médico ou psicológico, nem garante resultados específicos.</p>
+    <img src="logo-horizontal.png" alt="BEYOND">
+  </footer>
+</div>
+
+<script>
+/* === CONFIGURAÇÃO: cola os links do Stripe em LINKS quando existirem (vazio = WhatsApp) === */
+const CURSO = "Inteireza Divina (sábado, 24 de outubro)";
+const LINKS = { "Ação Rápida":"https://buy.stripe.com/7sY6oGgxm6lK76W4Hi4Ja0e", "Early Bird":"https://buy.stripe.com/aFadR8ch6cK876W4Hi4Ja0f", "Preço normal":"https://buy.stripe.com/4gM14mfti8tS3UKgq04Ja0g" };
+const WHATS = "351933416434";
+const wa = t => "https://wa.me/" + WHATS + "?text=" + encodeURIComponent(t);
+const ext = (a,h) => { if(!a) return; a.href=h; a.target="_blank"; a.rel="noopener"; };
+(function(){
+  const now = new Date(); let first = null;
+  document.querySelectorAll("#pricing-grid .price-card").forEach(card=>{
+    if (now > new Date(card.dataset.deadline)) { card.classList.add("expired"); return; }
+    if (!first) { first = card; card.classList.add("featured"); }
+    else { card.classList.add("later"); if (card.dataset.from) card.querySelector(".until").textContent = card.dataset.from; }
+    const n = card.dataset.name, p = card.dataset.price;
+    ext(card.querySelector(".buy-btn"), LINKS[n] || wa("Olá João! Quero o meu lugar no Curso "+CURSO+", a "+p+" ("+n+")."));
+  });
+  const p = first ? first.dataset.price : "";
+  if (!first) document.querySelector(".closed-msg").hidden = false;
+  ext(document.querySelector("[data-duo]"), wa("Olá João! Quero inscrever-me no Curso "+CURSO+" e trazer quem amo (paga metade)."));
+  ext(document.querySelector("[data-other]"), wa("Olá João! Quero inscrever-me no Curso "+CURSO+(p?" ("+p+")":"")+" e pagar por transferência bancária. Podes enviar-me os dados por email?"));
+  ext(document.querySelector("[data-write]"), wa("Olá João! Tenho uma pergunta sobre o Curso "+CURSO+"."));
+})();
+
+/* Presente gratuito (MailerLite, mesmo formulário do Bálsamo: Presente_Ativacao_Equilibrio) */
+(function(){
+  const f=document.querySelector("[data-presente]"), ok=document.querySelector("[data-presente-ok]");
+  f.addEventListener("submit", async e=>{
+    e.preventDefault();
+    const em=f.querySelector("[type=email]");
+    if(!em.value || !em.checkValidity()){ em.focus(); em.reportValidity(); return; }
+    const d=new FormData(f); d.append("ml-submit","1"); d.append("anticsrf","true");
+    const b=f.querySelector("button"); b.disabled=true; b.textContent="Um momento…";
+    try{ await fetch("https://assets.mailerlite.com/jsonp/909226/forms/200523205818976052/subscribe",{method:"POST",body:d}); }catch(err){}
+    f.hidden=true; ok.hidden=false;
+  });
+})();
+</script>
+
+</body>
+</html>
