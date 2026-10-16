@@ -23,7 +23,7 @@
   function track(ev, data) { if (window.fbq) fbq('track', ev, data || {}); }
 
   document.addEventListener('click', function (e) {
-    var a = e.target.closest && e.target.closest('a[href*="buy.stripe.com"]');
+    var a = e.target.closest && e.target.closest('a[href*="buy.stripe.com"], a.buy-btn');
     if (a) track('InitiateCheckout', { currency: 'EUR', content_name: 'Inteireza Divina' });
   }, true);
   document.addEventListener('submit', function () { track('CompleteRegistration', { content_name: 'Inteireza Divina' }); }, true);

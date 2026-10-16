@@ -395,9 +395,9 @@ footer img{width:150px;height:auto;margin:22px auto 0;display:block}
         <a class="link" data-duo href="#">Quero trazer quem amo</a>
       </div>
       <div class="fine-card">
-        <h4>Transferência bancária</h4>
-        <p>O botão acima aceita cartão (de qualquer país) e MB WAY. Se preferires transferência bancária, pede-me os dados e envio-tos por email.</p>
-        <a class="link" data-other href="#">Pedir os dados de transferência</a>
+        <h4>Como pagar</h4>
+        <p>Podes pagar por MB WAY, PayPal ou transferência bancária. Ao tocares no botão, abre-se uma conversa comigo no WhatsApp e envio-te os dados.</p>
+        <a class="link" data-other href="#">Pedir os dados de pagamento</a>
       </div>
     </div>
   </section>
@@ -451,7 +451,7 @@ footer img{width:150px;height:auto;margin:22px auto 0;display:block}
     <details><summary>E se não puder estar ao vivo?</summary><p>Recebes a gravação completa. A Cura e as Iniciações são transmitidas a todos os inscritos. Mas se puderes, vem ao vivo!</p></details>
     <details><summary>Há pausas?</summary><p>Sim, duas pausas de 25 minutos, entre cada movimento.</p></details>
     <details><summary>E se trouxer alguém?</summary><p>Cada pessoa que trouxeres paga metade do valor em vigor nesse momento. Escreve-me pelo WhatsApp com os nomes e envio-te o código.</p></details>
-    <details><summary>Como pago?</summary><p>Com cartão (de qualquer país) ou MB WAY, no botão do valor em vigor. Para transferência bancária, toca em "Pedir os dados de transferência" e envio-tos por email.</p></details>
+    <details><summary>Como pago?</summary><p>Por MB WAY, PayPal ou transferência bancária. Toca no botão do valor em vigor: abre-se uma conversa comigo no WhatsApp e envio-te os dados para pagares.</p></details>
     <details><summary>Isto substitui tratamento médico ou psicológico?</summary><p>Não. É um trabalho espiritual, complementar. Não interrompas nenhum tratamento.</p></details>
   </section>
 
@@ -490,9 +490,9 @@ footer img{width:150px;height:auto;margin:22px auto 0;display:block}
 </div>
 
 <script>
-/* === CONFIGURAÇÃO: cola os links do Stripe em LINKS quando existirem (vazio = WhatsApp) === */
+/* === v7 (16 out 2026): pagamento só por WhatsApp (MB WAY, PayPal, transferência). LINKS vazio = WhatsApp === */
 const CURSO = "Inteireza Divina (sábado, 24 de outubro)";
-const LINKS = { "Ação Rápida":"https://buy.stripe.com/7sY6oGgxm6lK76W4Hi4Ja0e", "Early Bird":"https://buy.stripe.com/aFadR8ch6cK876W4Hi4Ja0f", "Preço normal":"https://buy.stripe.com/4gM14mfti8tS3UKgq04Ja0g" };
+const LINKS = {};
 const WHATS = "351933416434";
 const wa = t => "https://wa.me/" + WHATS + "?text=" + encodeURIComponent(t);
 const ext = (a,h) => { if(!a) return; a.href=h; a.target="_blank"; a.rel="noopener"; };
@@ -503,12 +503,12 @@ const ext = (a,h) => { if(!a) return; a.href=h; a.target="_blank"; a.rel="noopen
     if (!first) { first = card; card.classList.add("featured"); }
     else { card.classList.add("later"); if (card.dataset.from) card.querySelector(".until").textContent = card.dataset.from; }
     const n = card.dataset.name, p = card.dataset.price;
-    ext(card.querySelector(".buy-btn"), LINKS[n] || wa("Olá João! Quero o meu lugar no Curso "+CURSO+", a "+p+" ("+n+")."));
+    ext(card.querySelector(".buy-btn"), LINKS[n] || wa("Olá João! Quero o meu lugar no Curso "+CURSO+", a "+p+" ("+n+"). Podes enviar-me os dados para pagar por MB WAY, PayPal ou transferência bancária?"));
   });
   const p = first ? first.dataset.price : "";
   if (!first) document.querySelector(".closed-msg").hidden = false;
   ext(document.querySelector("[data-duo]"), wa("Olá João! Quero inscrever-me no Curso "+CURSO+" e trazer quem amo (paga metade)."));
-  ext(document.querySelector("[data-other]"), wa("Olá João! Quero inscrever-me no Curso "+CURSO+(p?" ("+p+")":"")+" e pagar por transferência bancária. Podes enviar-me os dados por email?"));
+  ext(document.querySelector("[data-other]"), wa("Olá João! Quero inscrever-me no Curso "+CURSO+(p?" ("+p+")":"")+". Podes enviar-me os dados para pagar por MB WAY, PayPal ou transferência bancária?"));
   ext(document.querySelector("[data-write]"), wa("Olá João! Tenho uma pergunta sobre o Curso "+CURSO+"."));
 })();
 
