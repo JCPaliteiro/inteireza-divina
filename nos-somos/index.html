@@ -228,23 +228,19 @@ footer img{width:150px;height:auto;margin:22px auto 0;display:block}
       </div>
       <div class="hero-btn"><a class="btn" href="#precos">Garantir o meu lugar</a></div>
     </div>
-    <!-- Três gerações de luz: os que vieram antes (rosa), nós (dourado, ao centro), os que virão (azul-céu), ligados pela sálvia -->
-    <svg class="tree" viewBox="0 0 400 400" role="img" aria-label="Três gerações de luz ligadas entre si">
+    <!-- Roda da Família de Luz: a Presença ao centro, a família à volta (rosa, sálvia, azul-céu), em Unidade -->
+    <svg class="tree" viewBox="0 0 400 400" role="img" aria-label="Roda de luzes à volta de uma luz central">
       <defs>
-        <radialGradient id="gr"><stop offset="0" stop-color="#d4868a" stop-opacity=".95"/><stop offset=".6" stop-color="#d4868a" stop-opacity=".35"/><stop offset="1" stop-color="#d4868a" stop-opacity="0"/></radialGradient>
-        <radialGradient id="gg"><stop offset="0" stop-color="#6f9e78" stop-opacity=".9"/><stop offset=".6" stop-color="#6f9e78" stop-opacity=".3"/><stop offset="1" stop-color="#6f9e78" stop-opacity="0"/></radialGradient>
-        <radialGradient id="gs"><stop offset="0" stop-color="#6e9fc9" stop-opacity=".95"/><stop offset=".6" stop-color="#6e9fc9" stop-opacity=".32"/><stop offset="1" stop-color="#6e9fc9" stop-opacity="0"/></radialGradient>
-        <radialGradient id="gc"><stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#f6e2b5"/><stop offset=".7" stop-color="#C9A063" stop-opacity=".45"/><stop offset="1" stop-color="#C9A063" stop-opacity="0"/></radialGradient>
+        <radialGradient id="dc"><stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#f6e2b5"/><stop offset=".75" stop-color="#C9A063" stop-opacity=".5"/><stop offset="1" stop-color="#C9A063" stop-opacity="0"/></radialGradient>
+        <radialGradient id="dr"><stop offset="0" stop-color="#d4868a" stop-opacity=".9"/><stop offset="1" stop-color="#d4868a" stop-opacity="0"/></radialGradient>
+        <radialGradient id="dg"><stop offset="0" stop-color="#6f9e78" stop-opacity=".9"/><stop offset="1" stop-color="#6f9e78" stop-opacity="0"/></radialGradient>
+        <radialGradient id="ds"><stop offset="0" stop-color="#6e9fc9" stop-opacity=".9"/><stop offset="1" stop-color="#6e9fc9" stop-opacity="0"/></radialGradient>
       </defs>
-      <g stroke="#C9A063" stroke-opacity=".55" stroke-width="1.2" fill="none">
-        <line x1="70" y1="70" x2="150" y2="200"/><line x1="160" y1="55" x2="150" y2="200"/><line x1="240" y1="55" x2="250" y2="200"/><line x1="330" y1="70" x2="250" y2="200"/>
-        <line x1="150" y1="200" x2="200" y2="200"/><line x1="250" y1="200" x2="200" y2="200"/>
-        <line x1="200" y1="200" x2="110" y2="330"/><line x1="200" y1="200" x2="200" y2="345"/><line x1="200" y1="200" x2="290" y2="330"/>
-      </g>
-      <g class="pulse"><circle cx="70" cy="70" r="34" fill="url(#gr)"/><circle cx="160" cy="55" r="34" fill="url(#gr)"/><circle cx="240" cy="55" r="34" fill="url(#gr)"/><circle cx="330" cy="70" r="34" fill="url(#gr)"/></g>
-      <g class="pulse d2"><circle cx="150" cy="200" r="44" fill="url(#gg)"/><circle cx="250" cy="200" r="44" fill="url(#gg)"/></g>
-      <circle cx="200" cy="200" r="70" fill="url(#gc)"/>
-      <g class="pulse d3"><circle cx="110" cy="330" r="32" fill="url(#gs)"/><circle cx="200" cy="345" r="32" fill="url(#gs)"/><circle cx="290" cy="330" r="32" fill="url(#gs)"/></g>
+      <circle cx="200" cy="200" r="130" fill="none" stroke="#C9A063" stroke-opacity=".45" stroke-width="1.2"/>
+      <circle cx="200" cy="200" r="80" fill="none" stroke="#C9A063" stroke-opacity=".3" stroke-width="1"/>
+      <g class="pulse"><circle cx="200" cy="70" r="30" fill="url(#dr)"/><circle cx="330" cy="200" r="30" fill="url(#dg)"/><circle cx="200" cy="330" r="30" fill="url(#ds)"/><circle cx="70" cy="200" r="30" fill="url(#dr)"/></g>
+      <g class="pulse d2"><circle cx="292" cy="108" r="30" fill="url(#ds)"/><circle cx="292" cy="292" r="30" fill="url(#dr)"/><circle cx="108" cy="292" r="30" fill="url(#dg)"/><circle cx="108" cy="108" r="30" fill="url(#ds)"/></g>
+      <circle cx="200" cy="200" r="78" fill="url(#dc)"/>
     </svg>
   </header>
 
